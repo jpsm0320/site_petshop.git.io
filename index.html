@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET GALLERY</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #bababa;
+            /* Laranja */
+            color: #333;
+            /* Texto padrão */
+        }
+
+        header {
+            background-color: #9ea6ab;
+            /* Cinza claro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4f4542;
+            /* Laranja mais escuro */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: #455A64;
+            /* Cinza escuro */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            /* Laranja mais escuro */
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            background-color: white;
+            width: 200px;
+            /* Largura fixa para os produtos */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #455A64;
+            /* Cinza escuro */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                float: none;
+                width: 100%;
+            }
+
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 90%;
+                /* Largura responsiva para mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PET GALLERY</div>
+        <p>O melhor para o seu melhor amigo!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo à Pet Gallery!</h1>
+            <p>Seu lugar favorito para pets e produtos.</p>
+            <img src="imagem pet 4.png" alt="Banner da Pet Gallery" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="product-container">
+                <div class="product">
+                    <h3>Ração Premium para Cães</h3>
+                    <img src="chips-2.png" alt="Ração Premium para Cães" style="max-width: 100%; height: auto;">
+                    <p>Ração de alta qualidade para a nutrição do seu cão.</p>
+                    <p><strong>Preço: R$ 99,99</strong></p>
+                </div>
+
+                <div class="product">
+                    <h3>Cama para Gatos</h3>
+                    <img src="cama_quadrada_para_cachorro_ou_gatos_super_luxo_luppet_azul_51_1_20230119100048.webp"
+                        alt="Cama para Gatos" style="max-width: 100%; height: auto;">
+                    <p>Cama confortável e macia para seu gato descansar.</p>
+                    <p><strong>Preço: R$ 79,99</strong></p>
+                </div>
+
+                <div class="product">
+                    <h3>Brinquedo Interativo</h3>
+                    <img src="71R1aPOv4GL._AC_UF1000,1000_QL80_.jpg" alt="Brinquedo Interativo"
+                        style="max-width: 100%; height: auto;">
+                    <p>Brinquedo que estimula a mente do seu pet.</p>
+                    <p><strong>Preço: R$ 29,99</strong></p>
+                </div>
+
+                <div class="product">
+                    <h3>Shampoo Hipoalergênico</h3>
+                    <img src="shopping.webp" alt="Shampoo Hipoalergênico" style="max-width: 100%; height: auto;">
+                    <p>Shampoo ideal para pelagens sensíveis.</p>
+                    <p><strong>Preço: R$ 39,99</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A Pet Gallery é dedicada ao bem-estar dos animais e oferece os melhores produtos, serviços e cuidados.
+            </p>
+            <p>Conheça nossa equipe apaixonada e nossos valores!</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Endereço: Rua dos Animais, 123 - Cidade: Campinas-SP</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PET GALLERY. Todos os direitos reservados.</p>
+        <p>
+            <a href="#" style="color: #000000;">Facebook</a> |
+            <a href="#" style="color: #000000;">Instagram</a> |
+            <a href="#" style="color: #000000;">Twitter</a>
+        <p><a href="https://wa.me/1234567890" style="color: #000000;">Chat no WhatsApp</a></p>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0; /* Fundo suave */
+    color: #4a2c2a; /* Texto escuro */
+}
+
+header {
+    background-color: #ff7043; /* Laranja vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+footer {
+    background-color: #ffab40; /* Laranja claro */
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Modificado para evitar fixação */
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #ff7043; /* Borda laranja */
+    border-radius: 10px; /* Cantos arredondados */
+    transition: transform 0.2s; /* Transição suave */
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+.banner img {
+    margin-left: 50%;
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFA500; /* Fundo laranja */
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFD700; /* Dourado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+main {
+    padding: 20px;
+}
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+}
